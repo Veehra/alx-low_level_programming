@@ -14,22 +14,19 @@ void print_times_table(int n)
 		for (i = 0; i <= n; i++)
 		{
 			_putchar('0');
-		}
 
-		for (j = 0; j <= n; j++)
-		{
-			_putchar(',');
-			_putchar(' ');
-			k = i * j;
-
-			if (k <= 99)
+			for (j = 0; j <= n; j++)
 			{
-				_putchar(' ');
-			}
-			if (k <= 9)
-			{
+				_putchar(',');
 				_putchar(' ');
 
+				k = i * j;
+
+				if (k <= 99)
+					_putchar(' ');
+
+				if (k <= 9)
+					_putchar(' ');
 				if (k >= 100)
 				{
 					_putchar((k / 100) + '0');
