@@ -26,7 +26,7 @@ void times_table(void)
 				}
 			}
 
-			if (k > 0)
+			if (k > 9)
 			{
 				first = k;
 
