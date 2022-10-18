@@ -9,15 +9,14 @@
  */
 int _putchar(char c)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
+	int i;
+	char s[8] = "_putchar";
+
+	for (i = 0; i <= 8; i++)
+	{
+		_putchar(s[i]);
+		_putchar('\n');
+	}
 
 	return (write(1, &c, 1));
 }
