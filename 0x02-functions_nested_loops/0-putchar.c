@@ -15,8 +15,8 @@ int _putchar(char c)
 	for (i = 0; i <= 8; i++)
 	{
 		_putchar(s[i]);
-		_putchar('\n');
 	}
+	_putchar('\n');
 
-	return (write(1, &c, 1));
+	return (0);
 }
