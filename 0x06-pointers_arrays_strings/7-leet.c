@@ -11,18 +11,19 @@
 char *leet(char *str)
 {
 	int i, j, len;
-	char capit[6] = {'A', 'E', 'O', 'T', 'L'};
-	char small[6] = {'a', 'e', 'o', 't', 'l'};
-	char num[6] = {'4', '3', '0', '7', '1'};
+	char capit[5] = {'A', 'E', 'O', 'T', 'L'};
+	char small[5] = {'a', 'e', 'o', 't', 'l'};
+	char num[5] = {'4', '3', '0', '7', '1'};
 
 	len = strlen(str);
 
-	for (i = 0; i < 5; i++)
+	for (i = 0; i <= 5; i++)
 	{
-		if (str[i] == capit[j] && str[i] == small[j])
-		{
-			str[i] = num[j];
-		}
+		for (j = 0; j <= 5; j++)
+			if (str[i] == capit[j] && str[i] == small[j])
+			{
+				str[i] = num[j];
+			}
 	}
 
 	return (str);
