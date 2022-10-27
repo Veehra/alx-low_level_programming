@@ -17,7 +17,7 @@ char *leet(char *str)
 
 	len = strlen(str);
 
-	for (i = 0; i <= 5; i++)
+	for (i = 0; i < 5; i++)
 	{
 		if (str[i] == capit[j] && str[i] == small[j])
 		{
