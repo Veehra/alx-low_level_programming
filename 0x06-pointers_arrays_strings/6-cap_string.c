@@ -10,7 +10,8 @@
 
 char *cap_string(char *str)
 {
-	int i, len;
+	int i, j, len;
+	char l;
 	char k = ' ';
 	char all[13] = " ,;.!?\"(){}";
 
@@ -18,19 +19,21 @@ char *cap_string(char *str)
 
 	for (i = 0; i < len; i++)
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
+		for (j = 0; j < 13; j++)
 		{
-			str[i] = str[i] - 32;
+			if (l != all[j])
+			{
+				continue;
+			}
+			if (str[i] >= 'a' && str[i] <= 'z')
+			{
+				str[i] = str[i] - 32;
+				break;
+			}
 		}
-		else if (str[i] == all[13])
-		{
-			str[i] = str[i] - 32;
-		}
-		else
-		{
-			k = str[i];
-		}
+		k = str[i];
 	}
 
 	return (str);
 }
+
