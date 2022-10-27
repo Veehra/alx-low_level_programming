@@ -12,7 +12,7 @@ char *cap_string(char *str)
 {
 	int i, j, len;
 	char l;
-	char all[13] = " ,;.!?\"(){}";
+	char all[13] = " \t\n,;.!?\"(){}";
 
 	len = strlen(str);
 	l = ' ';
