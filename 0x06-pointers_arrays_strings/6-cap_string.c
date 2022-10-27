@@ -12,10 +12,10 @@ char *cap_string(char *str)
 {
 	int i, j, len;
 	char l;
-	char k = ' ';
 	char all[13] = " ,;.!?\"(){}";
 
 	len = strlen(str);
+	l = ' ';
 
 	for (i = 0; i < len; i++)
 	{
@@ -31,7 +31,7 @@ char *cap_string(char *str)
 				break;
 			}
 		}
-		k = str[i];
+		l = str[i];
 	}
 
 	return (str);
