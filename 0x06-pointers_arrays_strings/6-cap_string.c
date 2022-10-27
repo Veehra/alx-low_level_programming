@@ -22,7 +22,7 @@ char *cap_string(char *str)
 		{
 			str[i] = str[i] - 32;
 		}
-		else if (str[1 - 1] == all[13])
+		else if (str[i] == all[13])
 		{
 			str[i] = str[i] - 32;
 		}
