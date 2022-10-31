@@ -21,11 +21,11 @@ void print_diagsums(int *a, int size)
 	{
 		if (i % (size + 1) == 0)
 		{
-			first = first + a[i];
+			first += a[i];
 		}
-		if (i != 0 && i % (size - i) == 0 && i < (size * size) - size + 1)
+		if (i != 0 && i % (size - 1) == 0 && i < (size * size) - size + 1)
 		{
-			second = second + a[i];
+			second += uia[i];
 		}
 	}
 
