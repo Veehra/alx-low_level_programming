@@ -12,7 +12,7 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	strpbrk(s, accept);
+	char *i = strpbrk(s, accept);
 
-	return (s);
+	return (i);
 }
