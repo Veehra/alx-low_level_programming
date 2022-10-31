@@ -25,7 +25,7 @@ void print_diagsums(int *a, int size)
 		}
 		if (i != 0 && i % (size - 1) == 0 && i < (size * size) - size + 1)
 		{
-			second += uia[i];
+			second += a[i];
 		}
 	}
 
