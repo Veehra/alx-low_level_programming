@@ -9,7 +9,9 @@
 
 int is_prime_number(int n)
 {
-	return (check_prime(n, 0));
+	if (n <= 1)
+		return (0);
+	return (check_prime(n, 2));
 }
 
 /**
