@@ -10,17 +10,26 @@
 
 int is_palindrome(char *s)
 {
-	int f, l, len;
+	return (check_palindrome(s, 0));
+}
 
-	f = 0;
-	l = len - 1;
-	len = strlen(s);
 
-	if (f == l)
+/**
+ * check_palindrome - Entry point
+ * @s: pointer
+ * @i: count
+ *
+ * Return: 1 or 0
+ */
+
+int check_palindrome(char *s, int i)
+{
+	int len = strlen(s);
+
+	if (i == len)
 		return (1);
-	else if (f > l)
-		return (1);
-	else if (s[f] != s[l])
+	else if (s[i] != s[len - 1 - i])
 		return (0);
-	return (is_palindrome(s + (f + 1) + (l - 1)));
+	else
+		return (check_palindrome(s, i + 1));
 }
