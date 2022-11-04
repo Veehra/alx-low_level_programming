@@ -11,20 +11,20 @@
 
 int main(int argc, char *argv[])
 {
-	int i, mul;
-
-	mul = 0;
+	int i, j, mul;
 
 	if (argc <= 2)
 	{
-		for (i = 0; i < argc; i++)
-		{
-			mul *= atoi(argv[i]);
-		}
-		printf("%d\n", mul);
-	}
-	else
-	{
 		printf("Error\n");
+
+		return (1);
 	}
+
+	i = atoi(argv[1]);
+	j = atoi(argv[2]);
+	mul = i * j;
+
+	printf("%d\n", mul);
+
+	return (0);
 }
