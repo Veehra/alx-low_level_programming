@@ -10,7 +10,7 @@
  * Return: 0;
  */
 
-int arg(int argc, char *argv)
+int arg(int argc, char __attribute__((unused)) *argv)
 {
 	printf("%d\n", argc - 1);
 
