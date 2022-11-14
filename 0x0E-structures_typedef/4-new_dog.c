@@ -1,4 +1,7 @@
 #include "dog.h"
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * new_dog - Entry point
@@ -11,7 +14,7 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int name_len, owner_len;
+	int name_len, owner_len, i;
 	dog_t *dog;
 
 	dog = malloc(sizeof(dog_t));
@@ -38,6 +41,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	for (i = 0; i < name_len; i++)
+		dog->name[i] = name[i];
+	dog->name[i] = '\0';
+
+	dog->age = age;
+	for (i = 0; i < owner_len; i++)
 		dog->owner[i] = owner[i];
 	dog->owner[i] = '\0';
 
