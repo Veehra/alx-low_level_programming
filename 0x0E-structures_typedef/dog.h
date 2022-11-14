@@ -1,7 +1,10 @@
 #ifndef DOG_H
 #define DOG_H
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stddef.h>
 
-int _putchar(char c);
 
 /**
  * struct dog - data structure
