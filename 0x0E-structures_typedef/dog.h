@@ -1,4 +1,4 @@
-#ifdef DOG_H
+#ifndef DOG_H
 #define DOG_H
 
 int _putchar(char c);
@@ -9,6 +9,7 @@ int _putchar(char c);
  * @age: age of dog
  * @owner: owner of dog
  *
+ * Description: dog with name age, and owner.
  */
 
 struct dog
